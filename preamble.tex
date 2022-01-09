@@ -1,0 +1,48 @@
+\usepackage[T1]{fontenc}
+% \usepackage{amsmath}
+% \usepackage{amssymb}
+\usepackage{hyperref}
+% \usepackage[all]{hypcap} % AFTER hyperref
+% \usepackage{graphicx} % \includegraphics, \graphicspath
+% \usepackage{listings} % \lstinputlisting
+\usepackage{etoolbox} % \ifdefstring
+% \usepackage{geometry} % \geometry
+% \usepackage[font={sf}]{caption} % sans font in captions
+\usepackage{collect} % \definecollection, \collect, \endcollect, \includecollection
+
+% \declaretheorem[style=definition,name=Definition]{definition}
+% \declaretheorem[style=plain,name=Theorem]{theorem}
+% \declaretheorem[style=definition,name=Example]{example}
+% \declaretheorem[style=definition,name=Exercise]{exercise}
+% \declaretheorem[style=plain,name=Fact]{fact}
+
+\edef\ejobname{\jobname}
+
+\ifdefstring{\ejobname}{preview}{
+
+    \let\oldmarginpar\marginpar
+    \renewcommand{\marginpar}[1]{\oldmarginpar{\scriptsize #1}}
+
+    \newenvironment{solution}{\par\noindent\emph{Solution.}}{\smallskip}
+    \newcommand{\solutions}{\relax}
+}{}
+
+\ifdefstring{\ejobname}{bayestat}{
+    
+    \let\oldmarginpar\marginpar
+    \renewcommand{\marginpar}[1]{\relax}
+
+    \definecollection{solutions}
+    \newcommand{\collectsolution}[1]{%
+        \collect{solutions}{\subsection*{Solution to exercise #1}}{}%
+    }
+    \newenvironment{solution}
+    {\expandafter\collectsolution\expandafter{\theexercise}}
+    {\endcollect}
+    \newcommand{\solutions}{
+        \chapter{Solutions}
+        \includecollection{solutions}
+    }
+}{}
+
+% \graphicspath{{figures/}}
