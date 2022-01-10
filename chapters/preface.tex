@@ -1,1 +1,94 @@
 \chapter{Preface}
+
+\textbf{Note:} this book is currently a work in progress. Take this preface as
+a sort of manifesto on its contents.
+
+This book aims to provide a complete introduction and guide to applied
+statistics for a Physics student, from freshman year to the Masters' thesis,
+alternating between first principles and concrete solutions to messy real world
+situations. The focus is on students mainly interested in experimental Physics,
+but the techniques also apply to the analysis of theoretical numerical
+calculations.
+
+The subject is presented exclusively from the point of view of Bayesian
+statistics. The more common frequentist approach is introduced only towards the
+end, in \autoref{ch:5}, but only to provide a bridge---a way of understanding
+information written in the frequentist language and translating it to the
+Bayesian paradigm. Although there is no formal context in which to ``prove''
+which of the two alternatives (or any other) is the correct one, experience and
+reflexion over the years within both worldviews have led me to conclude that
+the Bayesian way is the most efficient one, in the sense of reducing the time
+required to learn statistics in the first place, the amount of concepts needed
+to start dealing with real-world problems, the effort spent to start a first
+attack at an analysis, etc., due to to an higher degree of simplicity and
+coherence. If you are acquainted with the frequentist toolset, don't worry:
+despite these conceptual benefits, most of the time the calculations will be
+the same, just interpreted under a different light. Nothing really unusual will
+happen. There is always a way to ``backport'' any specific solution between the
+two methods---the difference is that the path through Bayes is shorter and
+straighter.
+
+We do not provide ``serious'' exercises at the end of each chapter, only simple
+ones intermixed with the theory. This is because we think it would be difficult
+to cast as a contained exercise all the richness and inexpected intricacy of
+real data. This book assumes that the reader, at any moment, is following a
+laboratory course, as is standard in Physics curricula. The content of this
+book either proves its worth in the lab, or is fated to serve no purpose.
+
+The lighter exercises are meant to help the reader fixate new concepts by
+actively deriving basic properties instead of passively reading proofs. By all
+means, if you can't solve an exercise, or have even a shred of doubt about your
+procedure, read the solution in \autoref{ch:sol}. The exercises are not
+optional.
+
+The material presented here mostly stems from my everyday (unsolicited) studies
+while going through my Physics degree. However, I would have probably never
+considered Bayesian statistics if it wasn't for a weird and intelligent fellow
+student, Valerio Lomanto, who in turns owes this insight to another weird and
+intelligent man, a Jew of the internet going by the name of Yudkowsky. For
+anything which is not my own concoction, the following books are my references:
+%
+\begin{itemize}
+    %
+    \item Jaynes, \emph{Probability Theory: the Logic of Science},
+    %
+    \item Pearl, \emph{Causality: Models, Reasoning and Inference},
+    %
+    \item MacKay, \emph{Information Theory, Inference, and Learning Algorithms},
+    %
+    \item Gelman, \emph{Bayesian Data Analysis}.
+    %
+\end{itemize}
+%
+If you ever read Jaynes and Pearl, you will find that the explanations are
+interspersed with conflictual statements against ``them'' or ``the
+establishment''---sort of. Don't worry, they are no quacks; they are both well
+respected scientists. This is a trope of Bayesian literature, since they can
+not wrap their head around how it happened that, at the dawn of the XX century,
+Bayes was dethroned as the rightful way to inference. I will follow the
+tradition.
+%
+\begin{flushright}
+    %
+    Giacomo Petrillo, January 10, 2022
+    %
+\end{flushright}
+
+\section*{License}
+
+Along with the digital copy, the source code of this book---both for
+typesetting the text and for generating the figures and examples---is released
+online at
+%
+\begin{center}
+    %
+    \url{https://github.com/Gattocrucco/bayestat}
+    %
+\end{center}
+%
+under the open source Creative Commons license
+\href{https://creativecommons.org/licenses/by-sa/4.0/}{Attribution-ShareAlike~4.0},
+which grants anyone the right to freely copy, modify and share the book,
+provided they cite the original source, highlight the eventual presence of
+modifications, and do not imply endorsement by the author if not given
+explicitly.

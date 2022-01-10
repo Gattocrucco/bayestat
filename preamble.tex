@@ -10,6 +10,8 @@
 % \usepackage[font={sf}]{caption} % sans font in captions
 \usepackage{collect} % \definecollection, \collect, \endcollect, \includecollection
 
+\input{fonts}
+
 % \declaretheorem[style=definition,name=Definition]{definition}
 % \declaretheorem[style=plain,name=Theorem]{theorem}
 % \declaretheorem[style=definition,name=Example]{example}
@@ -24,7 +26,8 @@
     \renewcommand{\marginpar}[1]{\oldmarginpar{\scriptsize #1}}
 
     \newenvironment{solution}{\par\noindent\emph{Solution.}}{\smallskip}
-    \newcommand{\solutions}{\relax}
+    \newcommand{\solutions}{This is the editing preview version, solutions
+    appear right after the exercises.}
 }{}
 
 \ifdefstring{\ejobname}{bayestat}{
@@ -39,10 +42,7 @@
     \newenvironment{solution}
     {\expandafter\collectsolution\expandafter{\theexercise}}
     {\endcollect}
-    \newcommand{\solutions}{
-        \chapter{Solutions}
-        \includecollection{solutions}
-    }
+    \newcommand{\solutions}{\includecollection{solutions}}
 }{}
 
 % \graphicspath{{figures/}}

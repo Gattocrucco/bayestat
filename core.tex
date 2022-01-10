@@ -5,7 +5,15 @@
 \title{Bayesian Statistics for Physics Students}
 \author{Giacomo Petrillo}
 
-% \includeonly{chapters/preface}
+\includeonly{%
+    chapters/preface,%
+    chapters/ch1,%
+    chapters/ch2,%
+    chapters/ch3,%
+    chapters/ch4,%
+    chapters/ch5,%
+    chapters/sol,%
+}
 
 \begin{document}
     
@@ -13,10 +21,10 @@
 
     \maketitle
 
-    \tableofcontents
-    
     \include{chapters/preface}
 
+    \tableofcontents
+    
     \mainmatter
 
     \include{chapters/ch1}
@@ -26,9 +34,9 @@
     \include{chapters/ch5}
     
     \appendix
-
-    \solutions
     
+    \include{chapters/sol}
+
     \backmatter
 
 \end{document}
