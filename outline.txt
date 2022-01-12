@@ -1,0 +1,157 @@
+ch1---get your fits done
+    probability
+        reasoning under uncertainty
+            cox's theorem
+            conditional probability
+            bayes theorem
+        probability on sets
+            kolmogorov's axioms
+            equivalence with logic
+        dependency
+            independence
+            conditional independence
+            dependency graphs
+                example of non-uniqueness
+            causality
+        variables
+            definition of variable
+                on propositions
+                on sets
+            distributions
+                joint distribution
+                conditional distribution
+                marginalization
+            real variables
+                density
+                joint density
+                unit of measurement
+                conditional density with discrete conditional
+                conditional density with continuous conditional
+                euclidean variables
+        measures
+            like probabilities but not normalized
+            how to use them with probabilities
+            example: cosmic ray flux
+    distributions
+        change of variable
+            discrete
+            with densities on the real line
+        expected value
+            invariance under change of variable
+        variance
+        covariance and correlation
+            correlation and independence
+        discrete
+            bernoulli
+            binomial
+            poissonian
+        continuous
+            exponential
+            gaussian
+                rough version of the clt
+        euclidean version
+            covariance matrix
+            multidimensional gaussian
+    inference
+        using bayes
+            also starting from an unnormalized measure
+            odds ratio
+        prior elicitation
+            knowledge
+            hidden knowledge
+            no uninformative
+            invariance
+            dynamical information
+            maximum entropy
+        extreme probabilities
+        doing it for real
+            example with pymc3
+    error propagation
+        deterministic derived quantities
+        moment propagation
+        everything is linear or a parabola
+        convergence radius, show example
+        save the day with transformations
+        keep track of all correlations
+    fitting
+        inverting implicit dependencies
+        measurements and models
+            the x and y standard setting
+        least squares
+            gaussian model
+            gaussian prior
+            linear model
+                worked out calculations
+                example with code
+                how to show correlations
+            laplace approximation
+                nonlinear example with code
+                comparison with pymc3
+        everything is kind of gaussian
+            start from ruler measurements with uniform distribution,
+              show how this fails in practice, introduce uncertainty over model
+              and marginalize it
+            histograms, limit of the binomial and poisson
+        model checking
+            introducing hierarchy
+            arrive at the chisquare from bayesian model comparison, somehow
+        changing the rules
+            errors on x
+                note on avoiding effective variance, with Valerio's example
+            euclidean y
+            totally messy y and auxiliary information
+            no x at all
+                fitting the circumference
+                    try to do it with odr implicit function
+        sistematics
+            outliers
+                how not to remove outliers
+                    but it is legal to remove them
+                don't lie
+                non-marginalized model
+                marginalized model
+                    will the MCMC converge in a reasonable time on my laptop?
+            unknown error scale
+                arrive at the reduced chisquare correction
+            serious inference on the errors
+                inverse gamma prior
+            pattern in the residuals
+                you could deal with it using bayes, but you are not ready
+                increasing model size, quantifying the unknown
+            know when to surrender
+*FOLLOWING TO BE REFINED*
+ch2---a lot of data
+    correlations in the gaussian model
+        paradoxes of correlations
+        transitiveness of correlation
+        joint and marginal normality
+    introduce gvar and lsqfit
+        don't lose track of correlations!
+    write better code
+    dealing with large samples
+        doing it fast
+        lose information
+            do bayes later
+        average and bias
+        sample mean, variance, correlation
+        other standard frequentist stuff
+ch3---where is the model
+    gaussian processes
+    signal processing
+    fourier
+    markov chains
+        convergence
+        dynamical systems
+    mcmc algorithms for real
+ch4---real stuff never works
+    bootstrap
+    forking paths
+    simulations
+    exploratory analysis
+    nonparametric save-asses
+    calibration
+    agree to disagree
+ch5---you can't do what you like
+    standard frequentist inference theory
+    doing frequentist then bayes, for each case
+    notation on pvalues, ANOVA, tests from medical science
