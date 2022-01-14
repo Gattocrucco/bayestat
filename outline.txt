@@ -64,6 +64,7 @@ ch1---get your fits done
             dynamical information
             maximum entropy
         extreme probabilities
+        sufficiency (should I do it? never been useful in real life)
         doing it for real
             example with pymc3
     error propagation
@@ -73,6 +74,8 @@ ch1---get your fits done
         convergence radius, show example
         save the day with transformations
         keep track of all correlations
+        splitting the error
+            also with correlations
     fitting
         inverting implicit dependencies
         measurements and models
@@ -128,6 +131,8 @@ ch2---a lot of data
     introduce gvar and lsqfit
         don't lose track of correlations!
     write better code
+    advanced model checking
+        posterior predictive distribution
     dealing with large samples
         doing it fast
         lose information
@@ -148,9 +153,11 @@ ch4---real stuff never works
     forking paths
     simulations
     exploratory analysis
+        splitting the sample
     nonparametric save-asses
     calibration
     agree to disagree
+    binning problems
 ch5---you can't do what you like
     standard frequentist inference theory
     doing frequentist then bayes, for each case
