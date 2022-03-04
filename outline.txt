@@ -2,6 +2,9 @@ ch1---get your fits done
     probability
         reasoning under uncertainty
             cox's theorem
+                first order logic
+            consistency with frequency
+                interpretation of the frequentist definition
             conditional probability
             bayes theorem
         probability on sets
@@ -38,6 +41,7 @@ ch1---get your fits done
             with densities on the real line
         expected value
             invariance under change of variable
+            may not exist
         variance
         covariance and correlation
             correlation and independence
@@ -49,6 +53,8 @@ ch1---get your fits done
             exponential
             gaussian
                 rough version of the clt
+            cauchy
+                clt not working
         euclidean version
             covariance matrix
             multidimensional gaussian
@@ -56,6 +62,7 @@ ch1---get your fits done
         using bayes
             also starting from an unnormalized measure
             odds ratio
+            not necessary (example with gaussian)
         prior elicitation
             knowledge
             hidden knowledge
@@ -162,3 +169,12 @@ ch5---you can't do what you like
     standard frequentist inference theory
     doing frequentist then bayes, for each case
     notation on pvalues, ANOVA, tests from medical science
+A---Cox's theorem
+    Pre-Cox bayesianism (from Shafer's answer to Van Horn)
+    Cox and Jaynes
+    Countable additivity
+    Van Horn's formalization
+    C&W reformulation
+        In some sense goes back to pre-Cox
+    Van Horn's reformulation
+        Uses explicit generators
